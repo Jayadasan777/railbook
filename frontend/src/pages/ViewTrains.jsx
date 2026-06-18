@@ -12,7 +12,7 @@ function ViewTrains() {
   const fetchTrains = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/trains"
+        "https://railbook-c0ws.onrender.com/api/trains"
       );
 
       setTrains(res.data);
@@ -25,7 +25,7 @@ function ViewTrains() {
   const deleteTrain = async (id) => {
     try {
       await axios.delete(
-        `http://localhost:5000/api/trains/${id}`
+        `https://railbook-c0ws.onrender.com/api/trains/${id}`
       );
 
       alert("Train Deleted Successfully");

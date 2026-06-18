@@ -17,7 +17,7 @@ function MyBookings() {
         localStorage.getItem("userId");
 
       const res = await axios.get(
-        `http://localhost:5000/api/bookings/${userId}`
+        `https://railbook-c0ws.onrender.com/api/bookings/${userId}`
       );
 
       setBookings(res.data);
@@ -105,7 +105,7 @@ Status: ${booking.bookingStatus}
   ) => {
     try {
       await axios.put(
-        `http://localhost:5000/api/bookings/cancel/${bookingId}`
+        `https://railbook-c0ws.onrender.com/api/bookings/cancel/${bookingId}`
       );
 
       alert(

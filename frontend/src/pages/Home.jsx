@@ -10,7 +10,7 @@ function Home() {
   const searchTrains = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/trains/search?source=${source}&destination=${destination}`
+        `https://railbook-c0ws.onrender.com/api/trains/search?source=${source}&destination=${destination}`
       );
 
       setTrains(res.data);

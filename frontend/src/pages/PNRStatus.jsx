@@ -9,7 +9,7 @@ function PNRStatus() {
   const searchPNR = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/bookings/pnr/${pnr}`
+        `https://railbook-c0ws.onrender.com/api/bookings/pnr/${pnr}`
       );
 
       setBooking(res.data);

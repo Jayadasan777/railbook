@@ -32,7 +32,7 @@ function Booking() {
       }
 
       const res = await axios.post(
-        "http://localhost:5000/api/bookings/book",
+        "https://railbook-c0ws.onrender.com/api/bookings/book",
         {
           userId,
           trainId: train._id,

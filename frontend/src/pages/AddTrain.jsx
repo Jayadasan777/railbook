@@ -14,7 +14,7 @@ function AddTrain() {
   const handleSubmit = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/trains/add",
+        "https://railbook-c0ws.onrender.com/api/trains/add",
         {
           trainNumber,
           trainName,

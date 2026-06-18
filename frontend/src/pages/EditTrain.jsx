@@ -38,7 +38,7 @@ function EditTrain() {
   const updateTrain = async () => {
     try {
       await axios.put(
-        `http://localhost:5000/api/trains/${train._id}`,
+        `https://railbook-c0ws.onrender.com/api/trains/${train._id}`,
         {
           trainNumber,
           trainName,
